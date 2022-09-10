@@ -6,57 +6,71 @@
     </head>
     
     <body>
-        <nav>
-            <ul>
-                <li>HOME</li>
-                <li>ABOUT</li>
-                <li>WORK</li>
-                <li>RESUME</li>
-                <li>CONTACT</li>
-            </ul> 
-        </nav>
-        <div>
-            <label for="">nom : </label><input type="text" >
-            <br/>
-            <input type="checkbox" value="">
-            <br/>
-            <button>valider</button>
-            <br/>
-            <a href="https://www.google.com/">google</a>
-        </div>
-        <section>  
-            <video width="300px" height="300px" controls>
-                <source src="video2.mp4" type="video/mp4">
-            </video>
-            <form action="">
-                <h3>ABOUT</h3>
-            </form>
-        </section>
-        <section>
-            <form ><input type="textarea" name="commentaire" id="commentaire">
-            </form>
-            <h3>WORK</h3>
-        </section>
-        <section>
-            <h3>resume</h3>
-        </section>
-        <section>
-            <h3>contact</h3>
-        </section>
-        <table>
-            <thead>
-                <tr>nom </tr>
-                <tr>prenom </tr>
-                <tr>age </tr>
-            </thead>
-            <td>masse </td>
-            <td>masse </td>
-            <td>28 </td>
+        <div class="conteneur">
+            <nav>
+                <ul>
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>WORK</li>
+                    <li>RESUME</li>
+                    <li>CONTACT</li>
+                </ul> 
+            </nav>
+            <fieldset>
+                <legend>Create your account</legend>
+                <input type="text" placeholder="NOM">
+                <br>
+                <input type="text" placeholder="Prenom">
+                <br>
+                <input type="email" placeholder="massamba084@gmail.com">
+                <br>
+                <label for="date de naissance">date de naissance : </label>
+                <br>
+                <input type="date" >
+                <br>
+                <input type="password" placeholder="mot de passe">
+                <div>
+                    <input type="checkbox" id="Homme" name="Homme" checked><label for="Homme" class="checkbox"> Homme</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Femme" name="Femme"><label for="Femme" class="checkbox"> Femme</label>
+                </div>
+                <button>valider</button>
+            </fieldset>
+            <section>  
+                <video width="300px" height="300px" controls>
+                    <source src="video2.mp4" type="video/mp4">
+                </video>
+                <form action="">
+                    <h3>ABOUT</h3>
+                </form>
+            </section>
+            <section>
+                <form class="formulaire"><input type="textarea" name="commentaire" id="commentaire">
+                </form>
+                <h3>WORK</h3>
+            </section>
+            <section>
+                <h3>RESUME</h3>
+            </section>
+            <section>
+                <h3>CONTACT</h3>
+            </section>
+            <table>
+                <thead>
+                    <tr>nom </tr>
+                    <tr>prenom </tr>
+                    <tr>age </tr>
+                </thead>
+                <td>masse </td>
+                <td>masse </td>
+                <td>28 </td>
 
-        </table>
-        <footer>
-            <p>Copyrights</p>
-        </footer>
+            </table>
+            <footer>
+                <p>Copyrights : premier exercice en css</p>
+            </footer>
+        </div>
     </body>
 
 </html>
